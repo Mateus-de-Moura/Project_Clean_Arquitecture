@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4OeR4ZyV/WwkIAtoJo7wcVR9JQS08nqQwrvJfvsRocFJjpKcmwif7Dh9hLPeUzev75tCCLGGt3786iPHRVWNfg==",
+  "dgSpecHash": "HX7mK2YThMb8S7ykOkOdxJJbInAPPz3OkAK4eVIKeGvpR372dNPNMpDorFuEvS6wUs9XpxJWLJ5Tb7q9/lkC4g==",
   "success": true,
-  "projectFilePath": "E:\\Projetos\\Project\\Project.Shared\\Project.Shared.csproj",
+  "projectFilePath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\Project.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

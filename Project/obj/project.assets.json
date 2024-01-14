@@ -3149,11 +3149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projetos\\Project\\Project\\Project.csproj",
+      "projectUniqueName": "E:\\Projetos\\Project_Clean_Arquitecture\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "E:\\Projetos\\Project\\Project\\Project.csproj",
+      "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project\\Project.csproj",
       "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-      "outputPath": "E:\\Projetos\\Project\\Project\\obj\\",
+      "outputPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3170,11 +3170,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\Projetos\\Project\\Project.Application\\Project.Application.csproj": {
-              "projectPath": "E:\\Projetos\\Project\\Project.Application\\Project.Application.csproj"
+            "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\Project.Application.csproj": {
+              "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\Project.Application.csproj"
             },
-            "E:\\Projetos\\Project\\Project.Infrastructure\\Project.Infrastructure.csproj": {
-              "projectPath": "E:\\Projetos\\Project\\Project.Infrastructure\\Project.Infrastructure.csproj"
+            "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Infrastructure\\Project.Infrastructure.csproj": {
+              "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Infrastructure\\Project.Infrastructure.csproj"
             }
           }
         }

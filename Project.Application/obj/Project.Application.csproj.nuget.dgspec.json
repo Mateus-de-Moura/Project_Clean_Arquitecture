@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos\\Project\\Project.Application\\Project.Application.csproj": {}
+    "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\Project.Application.csproj": {}
   },
   "projects": {
-    "E:\\Projetos\\Project\\Project.Application\\Project.Application.csproj": {
+    "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\Project.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\Project\\Project.Application\\Project.Application.csproj",
+        "projectUniqueName": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\Project.Application.csproj",
         "projectName": "Project.Application",
-        "projectPath": "E:\\Projetos\\Project\\Project.Application\\Project.Application.csproj",
+        "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\Project.Application.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\Project\\Project.Application\\obj\\",
+        "outputPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Projetos\\Project\\Project.Core\\Project.Core.csproj": {
-                "projectPath": "E:\\Projetos\\Project\\Project.Core\\Project.Core.csproj"
+              "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Core\\Project.Core.csproj": {
+                "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Core\\Project.Core.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\Projetos\\Project\\Project.Core\\Project.Core.csproj": {
+    "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Core\\Project.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\Project\\Project.Core\\Project.Core.csproj",
+        "projectUniqueName": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Core\\Project.Core.csproj",
         "projectName": "Project.Core",
-        "projectPath": "E:\\Projetos\\Project\\Project.Core\\Project.Core.csproj",
+        "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Core\\Project.Core.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\Project\\Project.Core\\obj\\",
+        "outputPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Projetos\\Project\\Project.Shared\\Project.Shared.csproj": {
-                "projectPath": "E:\\Projetos\\Project\\Project.Shared\\Project.Shared.csproj"
+              "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\Project.Shared.csproj": {
+                "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\Project.Shared.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "E:\\Projetos\\Project\\Project.Shared\\Project.Shared.csproj": {
+    "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\Project.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\Project\\Project.Shared\\Project.Shared.csproj",
+        "projectUniqueName": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\Project.Shared.csproj",
         "projectName": "Project.Shared",
-        "projectPath": "E:\\Projetos\\Project\\Project.Shared\\Project.Shared.csproj",
+        "projectPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\Project.Shared.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\Project\\Project.Shared\\obj\\",
+        "outputPath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+sZUXdowk17MfFnG8YcopP1Z0gx/w4X0QkRYz2l91F6EJI0kNC9ptqu3VheoMT8iJZWub0N+yRlW8MDxBZ7kng==",
+  "dgSpecHash": "gHkbCNUzrlYj1NseOSheBei3tocLSMyHYNTynjU/GqU94T5wByHJViNT7gyyEM7R0pB4foMx6NE09kgq7/Zxlw==",
   "success": true,
-  "projectFilePath": "E:\\Projetos\\Project\\Project\\Project.csproj",
+  "projectFilePath": "E:\\Projetos\\Project_Clean_Arquitecture\\Project\\Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mateus\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Mateus\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
