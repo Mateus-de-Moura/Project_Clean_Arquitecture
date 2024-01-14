@@ -13,9 +13,9 @@ namespace Project.Core.Iterfaces
         Task<IEnumerable<T>> GetAllAsync();
         Task<PagedList<T>> GetPagedAsync(int pageNumber, int pageSize, Expression<Func<T, bool>> expression = null);
         Task<T> GetAsync(Guid id);
-        Task<T> AddAsync(T entity ); 
-        Task<T> UpdateAsync(T entity);
-        Task<T> DeleteAsync(Guid id);
+        Task<bool> AddAsync(T entity ); 
+        Task<bool> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(Guid id);
         
     }
 }

@@ -2,6 +2,7 @@
 using Project.Application.Interfaces;
 using Project.Core.Entities;
 using Project.Models;
+using Project.Shared.Dtos;
 
 namespace Project.Controllers
 {
@@ -15,8 +16,7 @@ namespace Project.Controllers
             _User = user;
         }
 
-
-        [HttpGet("Users")]
+        [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
             var result = await _User.GetUsersAsync();
@@ -33,6 +33,17 @@ namespace Project.Controllers
             var usersPaginate = await _User.GetPagedAsync(paginationParams.pageNumber, paginationParams.pageSize, paginationParams.Search);
 
             return Ok(usersPaginate);
+        }
+
+        [HttpPost("Add")]
+        public async Task<IActionResult> AddAsync(UserAddDto user)
+        {
+            var result = await _User.AddUserAsync(user);
+
+            if (result.IsSuccess)
+                return Ok("Usuário adicionado");
+            else
+                return BadRequest();
         }
 
         [HttpPut("Update")]

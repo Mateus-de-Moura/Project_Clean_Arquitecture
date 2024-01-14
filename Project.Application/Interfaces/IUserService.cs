@@ -1,6 +1,8 @@
-﻿using Project.Application.Pagination;
+﻿using Ardalis.Result;
+using Project.Application.Pagination;
 using Project.Core.Entities;
 using Project.Core.Iterfaces;
+using Project.Shared.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,8 @@ namespace Project.Application.Interfaces
     {      
         Task<IEnumerable<User>> GetUsersAsync();
         Task<User> GetByIdAsync(Guid Id);
-        Task<User> UpdateAsync(User user);
+        Task<Result<User>> UpdateAsync(User user);
+        Task<Result<bool>> AddUserAsync(UserAddDto user);
         Task<PagedList<User>> GetPagedAsync(int pageNumber, int pageSize, string search = "");
     }
 }

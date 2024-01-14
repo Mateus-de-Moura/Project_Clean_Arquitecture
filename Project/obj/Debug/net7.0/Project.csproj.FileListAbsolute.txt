@@ -158,3 +158,6 @@ E:\Projetos\Project\Project\obj\Debug\net7.0\refint\Project.dll
 E:\Projetos\Project\Project\obj\Debug\net7.0\Project.pdb
 E:\Projetos\Project\Project\obj\Debug\net7.0\Project.genruntimeconfig.cache
 E:\Projetos\Project\Project\obj\Debug\net7.0\ref\Project.dll
+E:\Projetos\Project_Clean_Arquitecture\Project\bin\Debug\net7.0\Ardalis.Result.dll
+E:\Projetos\Project_Clean_Arquitecture\Project\bin\Debug\net7.0\AutoMapper.dll
+E:\Projetos\Project_Clean_Arquitecture\Project\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

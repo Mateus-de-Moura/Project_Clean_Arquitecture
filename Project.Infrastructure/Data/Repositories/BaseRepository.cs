@@ -9,10 +9,11 @@ using Microsoft.EntityFrameworkCore.SqlServer;
 using Project.Application.Pagination;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+using Project.Shared.Entity;
 
 namespace Project.Infrastructure.Data.Repositories
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : class
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         public readonly DbSet<T> _DbSet;
         public readonly AppDbContext _AppDbContext;
@@ -23,14 +24,30 @@ namespace Project.Infrastructure.Data.Repositories
             _AppDbContext = appDbContext;
         }
 
-        public Task<T> AddAsync(T entity)
+        public async Task<bool> AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _DbSet.AddAsync(entity);
+
+                var rows = await _AppDbContext.SaveChangesAsync();
+
+                return rows > 0;
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado ao adicionar entidade: {ex.Message}");
+                return false;
+            }
         }
 
-        public Task<T> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var entity = await GetAsync(id);
+            _DbSet.Remove(entity);
+            var rows = await _AppDbContext.SaveChangesAsync();
+            return rows > 0;
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()
@@ -38,10 +55,8 @@ namespace Project.Infrastructure.Data.Repositories
             return await _DbSet.ToListAsync();
         }
 
-        public Task<T> GetAsync(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<T> GetAsync(Guid id) => await _DbSet.FirstOrDefaultAsync(u => u.Id == id);
+        
 
         public async Task<PagedList<T>> GetPagedAsync(int pageNumber, int pageSize, Expression<Func<T, bool>> expression = null)
         {
@@ -55,9 +70,11 @@ namespace Project.Infrastructure.Data.Repositories
            
         }
 
-        public Task<T> UpdateAsync(T entity)
+        public async Task<bool> UpdateAsync(T entity)
         {
-            throw new NotImplementedException();
+            _DbSet.Update(entity);
+            var rows = await _AppDbContext.SaveChangesAsync();
+            return rows > 0;
         }
     }
 
