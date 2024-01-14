@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project.Application.Interfaces;
+using Project.Core.Entities;
 using Project.Models;
 
 namespace Project.Controllers
@@ -25,12 +26,21 @@ namespace Project.Controllers
             else 
                 return BadRequest();    
         }
+
         [HttpGet("GetPaged")]
         public async Task<IActionResult> GetUsersPagined([FromQuery]PaginationParams paginationParams)
         {
             var usersPaginate = await _User.GetPagedAsync(paginationParams.pageNumber, paginationParams.pageSize, paginationParams.Search);
 
             return Ok(usersPaginate);
+        }
+
+        [HttpPut("Update")]
+        public async Task<IActionResult> Update(User user)
+        {
+            var result = await _User.UpdateAsync(user);
+
+            return Ok(result);
         }
     }
 }
